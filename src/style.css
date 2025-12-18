@@ -111,3 +111,13 @@ body {
   color: hsl(178, 100%, 50%);
   cursor: pointer;
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .card__overlay {
+    transition: none;
+  }
+
+  .card__image-container:hover .card__overlay {
+    opacity: 1;
+  }
+}
